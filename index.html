@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Best apples</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
 </head>
@@ -13,51 +14,52 @@
 <body>
   <!-- HEADER -->
   <header id="header">
-    <img id="header-img" src="" alt="">
+    <span id="logo">
+      <img id="header-img" src="https://i.imgur.com/fWMDZQH.png" alt="logo">
+      <span>Apples!</span>
+    </span>
     <nav id="nav-bar">
-      <li class="nav-link">
-        <a href="#">Features</a>
-      </li>
-      <li class="nav-link">
-        <a href="#">Pricing</a>
-      </li>
-      <li class="nav-link">
-        <a href="#">Sign up</a>
-      </li>
+      <a href="#products-anchor" class="nav-link">Products</a>
+      <a href="#features-anchor" class="nav-link">Features</a>
+      <a href="#form" class="nav-link">Sign up</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <div class="hero-container">
     <h1>The best apples ever!</h1>
+    <p>Check it out!</p>
   </div>
 
-  <!-- FEATURES CARDS -->
+  <!-- PRODUCT CARDS -->
   <div class="cards-container">
+    <div id="products-anchor"></div>
     <div class="card">
-      <img src="" alt="">
-      <h2>Green apple</h2>
+      <div id="card-img1"></div>
+      <h2>Green apples</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="card">
-      <img src="" alt="">
-      <h2>Green apple</h2>
+      <div id="card-img2"></div>
+      <h2>Red apples</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="card">
-      <img src="" alt="">
-      <h2>Green apple</h2>
+      <div id="card-img3"></div>
+      <h2>Blue apples</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
   </div>
 
   <!-- VIDEO -->
   <div class="video-container">
-    <video id="video" src=""></video>
+    <div id="features-anchor"></div>
+    <iframe id="video" width="100%" height="600px"
+      src="https://www.youtube.com/embed/zUkQgsMJqHY?controls=0&amp;start=438" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <!-- SIGN UP FORM -->
-
   <div class="form-container">
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <h2>Sign up to our newsletter!</h2>
@@ -66,6 +68,10 @@
     </form>
   </div>
 
+  <!-- FOOTER SECTION -->
+  <footer>
+    <p>made by <a href="https://github.com/jacopopangrazi">jacopopangrazi</a></p>
+  </footer>
 
 </body>
 
