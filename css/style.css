@@ -59,18 +59,58 @@ header img {
   text-decoration: none;
 }
 
-@media (max-width: 760px) {
-  #nav-bar {
-    width: 250px;
-  }
-
-  .nav-link {
-    font-size: 18px;
-  }
-}
-
 a:hover {
   opacity: 0.8;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+#mobile-menu {
+  background: #f5f5f58c;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+#mobile-menu.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#mobile-menu .nav-link {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 40px 70px;
+}
+
+@media (max-width: 760px) {
+  #nav-bar {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
 }
 
 /* HERO SECTION */
@@ -245,6 +285,10 @@ a:hover {
 @media (max-width: 950px) {
   .form-container {
     width: 90%;
+  }
+
+  #form #email {
+    width: 80%;
   }
 }
 

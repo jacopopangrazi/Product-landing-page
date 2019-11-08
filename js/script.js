@@ -24,3 +24,15 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 };
+
+// navigation starts here
+$("#hamburger").click(function() {
+  $("#mobile-menu").toggleClass("show");
+  $("#mobile-menu").toggleClass("hide");
+});
+
+$("#mobile-menu .nav-link").click(function() {
+  $("#mobile-menu").toggleClass("show");
+  $("#mobile-menu").toggleClass("hide");
+});
+// navigation ends here

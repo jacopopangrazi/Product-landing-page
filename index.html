@@ -8,7 +8,8 @@
   <title>Best apples</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,16 @@
       <a href="#features-anchor" class="nav-link">Features</a>
       <a href="#form" class="nav-link">Sign up</a>
     </nav>
+    <span id="hamburger">
+      <img src="images/iconfinder_menu-alt_134216.svg" alt="hamburger menu">
+    </span>
   </header>
+
+  <div id="mobile-menu" class="hide">
+    <a href="#products-anchor" class="nav-link">Products</a>
+    <a href="#features-anchor" class="nav-link">Features</a>
+    <a href="#form" class="nav-link">Sign up</a>
+  </div>
 
   <!-- HERO -->
   <div class="hero-container">
@@ -36,12 +46,12 @@
     <div id="products-anchor"></div>
     <div class="card">
       <div id="card-img1"></div>
-      <h2>Green apples</h2>
+      <h2>Red apples</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="card">
       <div id="card-img2"></div>
-      <h2>Red apples</h2>
+      <h2>Green apples</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="card">
@@ -73,6 +83,7 @@
     <p>made by <a href="https://github.com/jacopopangrazi">jacopopangrazi</a></p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>
